@@ -1,0 +1,18 @@
+//12/12/2016 - MCJ_GDR_DD
+//Free Code Camp challenge answer(s) to Reverse a String challenge
+
+
+function reverseString(str) {
+  
+ // var splitStr = str.split("");
+//  var reversedStr = splitStr.reverse();
+ // var joinedResult = reversedStr.join("");
+  
+  str = str.split("");
+  str = str.reverse();
+  str = str.join("");
+  
+  return str;
+}
+
+reverseString("hello world!");
