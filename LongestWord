@@ -1,0 +1,22 @@
+// 12/13/2016  MCJ_GDR_DD  Free code camp challenge
+// Find longest word in a string
+
+function findLongestWord(str) 
+{
+  
+  splitStr = str.split(" ");
+  var longest = splitStr[0].length;
+  
+  for (var x = 1; x < splitStr.length; x++)
+  {
+      if (longest < splitStr[x].length )  //if compare word is longer than longest word,
+      { 
+        longest = splitStr[x].length;     //then longest word now must equal the compare word
+      } 
+  }
+
+ // return str.length;
+  return longest;
+}
+
+findLongestWord("What is the average airspeed velocity of an unladen swallow");
